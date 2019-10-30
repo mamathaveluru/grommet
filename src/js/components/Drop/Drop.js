@@ -31,7 +31,9 @@ class Drop extends Component {
         setFocusWithoutScroll(this.originalFocusedElement.parentNode);
       }
     }
-    document.body.removeChild(this.dropContainer);
+    const parentNode = this.dropContainer.parentNode;
+    parentNode.removeChild(this.dropContainer);
+    //document.body.removeChild(this.dropContainer);
   }
 
   render() {

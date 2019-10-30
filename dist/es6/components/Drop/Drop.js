@@ -112,7 +112,8 @@ var Drop =
         }
       }
 
-      document.body.removeChild(this.dropContainer);
+      var parentNode = this.dropContainer.parentNode;
+      parentNode.removeChild(this.dropContainer); //document.body.removeChild(this.dropContainer);
     };
 
     _proto.render = function render() {
