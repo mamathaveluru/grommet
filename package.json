@@ -147,7 +147,6 @@
     ]
   },
   "pre-commit": [
-    "lint-fix",
     "prettier",
     "test"
   ],

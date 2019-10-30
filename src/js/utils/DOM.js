@@ -71,10 +71,10 @@ export const getBodyChildElements = () => {
   return children;
 };
 
-export const getNewContainer = () => {
+export const getNewContainer = target => {
   // setup DOM
   const container = document.createElement('div');
-  document.body.appendChild(container);
+  target ? target.appendChild(container) : document.body.appendChild(container);
   return container;
 };
 
